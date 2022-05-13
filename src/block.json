@@ -3,13 +3,31 @@
 	"apiVersion": 2,
 	"name": "create-block/my-react-block",
 	"version": "0.1.0",
-	"title": "My React Block",
+	"title": "Custom Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example static block scaffolded with Create Block tool.",
+	"description": "Custom block for creating a images & text layout.",
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		}
+	},
+	"keywords": ["custom", "images", "grid"],
 	"textdomain": "my-react-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
